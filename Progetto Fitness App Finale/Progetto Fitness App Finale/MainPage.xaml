@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Progetto_Fitness_App_Finale.MainPage">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="25"
+        VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand">
+
+        
+        <Label
+            Text="Moov"
+            FontSize="36"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontFamily="Arial"
+            TextColor="#222222"
+            Margin="0,10,0,30"/>
+
+        
+        <Entry
+            x:Name="NomeEntry"
+            Placeholder="Username"
+            BackgroundColor="#F5F5F5"
+            HeightRequest="50"
+            TextColor="#222222"
+            PlaceholderColor="Gray"
+            
+            HorizontalOptions="Fill"/>
+
+        
+        <Entry
+            x:Name="PasswordEntry"
+            Placeholder="Password"
+            IsPassword="True"
+            BackgroundColor="#F5F5F5"
+            HeightRequest="50"
+            TextColor="#222222"
+            PlaceholderColor="Gray"
+            
+            HorizontalOptions="Fill"/>
+
+        
+        <Button
+            Text="Log In"
+            BackgroundColor="#4A90E2"
+            TextColor="White"
+            FontAttributes="Bold"
+            HeightRequest="50"
+            CornerRadius="25"
+            Clicked="LogOnNavigateClicked"
+            Margin="0,10,0,0"
+            HorizontalOptions="Fill"/>
+
+        
+        <Button
+            Text="Sign Up"
+            BackgroundColor="#7FB3E8"
+            TextColor="White"
+            FontAttributes="Bold"
+            HeightRequest="50"
+            CornerRadius="25"
+            Clicked="OnNavigateClicked"
+            Margin="0,0,0,0"
+            HorizontalOptions="Fill"/>
+
+    </VerticalStackLayout>
+</ContentPage>

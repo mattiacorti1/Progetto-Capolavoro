@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Progetto_Fitness_App_Finale.Pagina_AI"
+             Title="Pagina_AI">
+    <ScrollView>
+        <VerticalStackLayout Padding="30"
+                Spacing="20"
+                HorizontalOptions="FillAndExpand">
+
+         
+            <Label
+                Text="Piano AI"
+                FontSize="32"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontFamily="Arial"
+                TextColor="#222222"/>
+
+            
+            
+
+          
+            <Frame
+                BackgroundColor="#F5F5F5"
+                Padding="15"
+                CornerRadius="10"
+                HasShadow="False"
+                Margin="0,50,0,50"
+                HorizontalOptions="FillAndExpand">
+
+                <Label x:Name="PianoAI1"
+                       Text="Risultato qui..."
+                       FontSize="16"
+                       TextColor="Black"
+                       LineBreakMode="WordWrap"/>
+            </Frame>
+
+            <Button
+                Text="Genera Piano"
+                BackgroundColor="#4A90E2"
+                Clicked="OnGeneraPianoClicked"
+                TextColor="White"
+                HeightRequest="50"
+                CornerRadius="25"
+                Margin="0,250,0,50"
+                FontAttributes="Bold"
+                HorizontalOptions="Fill"/>
+
+
+
+
+            <Button
+                Text="Profilo"
+                BackgroundColor="#4A90E2"
+                Clicked="OnProfiloClicked"
+                TextColor="White"
+                HeightRequest="50"
+                CornerRadius="25"
+                FontAttributes="Bold"
+                Margin="0,0,0,30"
+                HorizontalOptions="Fill"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

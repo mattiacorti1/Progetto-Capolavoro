@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Progetto_Fitness_App_Finale.Profilo"
+             Title="Profilo"
+             Shell.NavBarIsVisible="True">
+    <ScrollView>
+        <VerticalStackLayout Padding="20"
+                             Spacing="20">
+
+            <!-- Titolo -->
+            <Label
+                Text="Profilo"
+                FontSize="34"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontFamily="Arial"
+                TextColor="#222222"/>
+
+            <!-- Box dati profilo -->
+            <Border
+                BackgroundColor="#D6F1FC"
+                Padding="20"
+                WidthRequest="320"
+                HorizontalOptions="Center"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="0"
+                Margin="0,10,0,10">
+
+                <VerticalStackLayout Spacing="12">
+                    <Label x:Name="NomeLabel"
+                           Text="Nome:"
+                           FontSize="18"
+                           TextColor="#222222"/>
+                    <Label x:Name="EtaLabel"
+                           Text="Età:"
+                           FontSize="18"
+                           TextColor="#222222"/>
+                    <Label x:Name="PesoLabel"
+                           Text="Peso:"
+                           FontSize="18"
+                           TextColor="#222222"/>
+                    <Label x:Name="AltezzaLabel"
+                           Text="Altezza:"
+                           FontSize="18"
+                           TextColor="#222222"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Bottone modifica profilo -->
+            <Button
+                Text="Modifica Profilo"
+                BackgroundColor="#4A90E2"
+                Clicked="ModificaDati_Clicked"
+                TextColor="White"
+                HeightRequest="50"
+                Margin="30,10"
+                CornerRadius="25"
+                FontSize="15"
+                FontAttributes="Bold"/>
+
+            <!-- Titolo piani -->
+            <Label
+                Text="Piani generati"
+                FontSize="30"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontFamily="Arial"
+                TextColor="#222222"
+                Margin="0,10,0,5"/>
+
+            <!-- Box piano generato -->
+            <Border
+                BackgroundColor="#D6F1FC"
+                Padding="20"
+                WidthRequest="320"
+                HorizontalOptions="Center"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="0"
+                Margin="0,10,0,10">
+
+                <VerticalStackLayout>
+                    <Label x:Name="PianiGeneratiEditor"
+                           FontSize="17"
+                           TextColor="#222222"
+                           LineBreakMode="WordWrap"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Bottone per visualizzare tutto il piano -->
+            <Button
+                Text="Visualizza piano completo"
+                BackgroundColor="#4A90E2"
+                TextColor="White"
+                HeightRequest="50"
+                Margin="30,10"
+                CornerRadius="25"
+                FontSize="15"
+                FontAttributes="Bold"
+                Clicked="OnVisualizzaPianoClicked"/>
+
+            <Button
+                Text="Log Out"
+                BackgroundColor="#4A90E2"
+                Clicked="LogOutClicked"
+                TextColor="White"
+                HeightRequest="50"
+                CornerRadius="25"
+                FontAttributes="Bold"
+                Margin="30,10"
+                HorizontalOptions="Fill"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
